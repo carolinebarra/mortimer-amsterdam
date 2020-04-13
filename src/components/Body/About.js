@@ -10,8 +10,8 @@ export default class Menu extends Component {
 	render() {
 		return (
 			<Col lg={12}>
-				<Box id="menu">
-					<h1>MENU</h1>
+				<Box id="about">
+					<h1>About</h1>
 				</Box>
 			</Col>
 		);

@@ -12,8 +12,8 @@ const Container = styled.div`
 const Link = styled.a`
 	margin: 1rem;
 	color: rgb(255, 69, 0);
-	width: 30px;
-	height: 30px;
+	width: 32px;
+	height: 32px;
 `;
 export default class SocialMedia extends React.Component {
 	render() {

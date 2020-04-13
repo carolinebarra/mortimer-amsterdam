@@ -1,5 +1,5 @@
 import React from 'react';
-//import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 const Container = styled.div`
 	padding: 30px 20px;
@@ -18,14 +18,11 @@ const Container = styled.div`
 const Title = styled.span`
 	color: rgb(252, 253, 217);
 `;
-const Link = styled.a`
-	text-decoration: none;
-`;
 
 const NavigationItem = (props) => {
 	return (
 		<Container>
-			<Link href={props.title} onClick={console.log('Clicked')}>
+			<Link activeClass="active" to={props.id} spy={true} smooth={true} offset={0} duration={500}>
 				<Title>{props.title}</Title>
 			</Link>
 		</Container>

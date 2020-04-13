@@ -12,17 +12,33 @@ const Logo = styled.img`
 
 const Container = styled.div`
 	background-color: rgb(18, 60, 56);
+
 	height: 90px;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 `;
 const navItems = [
-	{ title: 'Home' },
-	{ title: 'About' },
-	{ title: 'Menu' },
-	{ title: 'Contact' },
-	{ title: 'Work with Us' }
+	{
+		title: 'Home',
+		id: 'home'
+	},
+	{
+		title: 'About',
+		id: 'about'
+	},
+	{
+		title: 'Menu',
+		id: 'menu'
+	},
+	{
+		title: 'Contact',
+		id: 'contact'
+	},
+	{
+		title: 'Work with Us',
+		id: 'work'
+	}
 ];
 export default class Navigation extends Component {
 	render() {
@@ -31,7 +47,7 @@ export default class Navigation extends Component {
 				<Logo src={logo} />
 
 				{navItems.map((navItem) => (
-					<NavigationItem title={navItem.title} key={navItem.title} />
+					<NavigationItem title={navItem.title} key={navItem.title} id={navItem.id} />
 				))}
 			</Container>
 		);
