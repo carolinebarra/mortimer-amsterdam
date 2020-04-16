@@ -9,7 +9,7 @@ import About from './About';
 
 const Background = styled.img`
 	width: 100%;
-	height: 100vh;
+	height: 791px;
 	z-index: 1;
 `;
 
@@ -17,19 +17,24 @@ const Name = styled.img`
 	z-index: 2;
 	position: absolute;
 	mix-blend-mode: darken;
-	left: 314px;
-	bottom: 1877px;
+	left: 395.5px;
+	top: 160px;
 	transform: rotate(-39deg);
 `;
+const Container = styled.div`
+	height: 100%;
+	max-height: 100%;
 
+	width: 100%;
+`;
 export default class Body extends Component {
 	render() {
 		return (
 			<Col lg={12}>
-				<div>
+				<Container>
 					<Background src={background} />
 					<Name src={name} />
-				</div>
+				</Container>
 				<Menu />
 				<About />
 			</Col>

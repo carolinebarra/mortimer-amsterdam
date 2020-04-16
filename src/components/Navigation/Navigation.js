@@ -47,7 +47,7 @@ export default class Navigation extends Component {
 				<Logo src={logo} />
 
 				{navItems.map((navItem) => (
-					<NavigationItem title={navItem.title} key={navItem.title} id={navItem.id} />
+					<NavigationItem title={navItem.title} key={navItem.id} id={navItem.id} />
 				))}
 			</Container>
 		);
