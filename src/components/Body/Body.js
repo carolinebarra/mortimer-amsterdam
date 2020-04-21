@@ -5,6 +5,7 @@ import name from '../../images/mortimer-name.jpg';
 import styled from 'styled-components';
 import Menu from './Menu';
 import About from './About';
+import Gallery from './Gallery';
 //import { Map, Market, GoogleApiWrapper } from 'google-maps-react';
 
 const Background = styled.img`
@@ -35,8 +36,10 @@ export default class Body extends Component {
 					<Background src={background} />
 					<Name src={name} />
 				</Container>
-				<Menu />
 				<About />
+				<Menu />
+
+				<Gallery />
 			</Col>
 		);
 	}

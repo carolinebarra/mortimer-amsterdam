@@ -4,9 +4,10 @@ import logo from '../../images/logo.jpeg';
 import styled from 'styled-components';
 import NavigationItem from './NavigationItem';
 const Logo = styled.img`
-	width: 132px;
+	width: 192px;
 	position: absolute;
-	top: 5px;
+	top: 0px;
+	left: -20px;
 	writing-mode: vertical-lr;
 `;
 
@@ -34,6 +35,10 @@ const navItems = [
 	{
 		title: 'Contact',
 		id: 'contact'
+	},
+	{
+		title: 'Gallery',
+		id: 'gallery'
 	},
 	{
 		title: 'Work with Us',
