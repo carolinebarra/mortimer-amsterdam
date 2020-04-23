@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Col } from 'react-grid-system';
 import styled from 'styled-components';
-import Drinks from '../../images/mortimer-drinks (2).pdf';
-import Button from '@material-ui/core/Button';
-import Food from '../../images/Minha publicação (1).pdf';
-
+import Drinks from '../../images/mortimer-drinks.pdf';
+import { Document, Page, pdfjs } from 'react-pdf';
+import Food from '../../images/mortimer-food.pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const MyButton = styled.button({
 	background: ' rgb(255, 69, 0)',
 	border: 0,
@@ -18,34 +18,71 @@ const MyButton = styled.button({
 });
 const Box = styled.div`
 	text-align: center;
-	height: 100vh;
+	height: 100%;
 
 	.title {
 		color: rgb(18, 60, 56);
 	}
 `;
+const PDFDocumentWrapper = styled.div`
+	canvas {
+		width: 100% !important;
+		height: auto !important;
+		display: inline;
+	}
+`;
+class Pdf extends Component {
+	state = {
+		numPages: null,
+		pageNumber: 1
+	};
 
-export default class Menu extends Component {
-	onResumeClick() {
-		window.open(Drinks);
-	}
-	onResumeClick1() {
-		window.open(Food);
-	}
 	render() {
+		const { pageNumber } = this.state;
 		return (
-			<Col lg={12}>
-				<Box id="menu">
-					<h1 className="title">MENU</h1>
-
-					<a onClick={this.onResumeClick1}>
-						<MyButton> Food</MyButton>
-					</a>
-					<a onClick={this.onResumeClick}>
-						<MyButton> Drinks</MyButton>
-					</a>
-				</Box>
-			</Col>
+			<PDFDocumentWrapper>
+				<Document file={Drinks}>
+					<Page pageNumber={pageNumber}></Page>
+				</Document>
+			</PDFDocumentWrapper>
 		);
 	}
+}
+class Pdf2 extends Component {
+	state = {
+		numPages: null,
+		pageNumber: 1
+	};
+
+	render() {
+		const { pageNumber } = this.state;
+		return (
+			<PDFDocumentWrapper>
+				<Document file={Food}>
+					<Page pageNumber={pageNumber}></Page>
+				</Document>
+			</PDFDocumentWrapper>
+		);
+	}
+}
+
+export default function Menu() {
+	const [showDrinks, setShowDrinks] = React.useState(false);
+	const [showFood, setShowFood] = React.useState(false);
+	const onClick = () => setShowDrinks(!showDrinks);
+	const onClick2 = () => setShowFood(!showFood);
+	return (
+		<Col lg={12}>
+			<Box id="menu">
+				<h1 className="title">MENU</h1>
+
+				<MyButton onClick={onClick2}> Food</MyButton>
+
+				<MyButton onClick={onClick}> Drinks</MyButton>
+
+				{showDrinks ? <Pdf /> : ''}
+				{showFood ? <Pdf2 /> : ''}
+			</Box>
+		</Col>
+	);
 }

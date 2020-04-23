@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from '../../images/logo.jpeg';
+import logo from '../../images/mortimer-svg.svg';
 
 import styled from 'styled-components';
 import NavigationItem from './NavigationItem';
 const Logo = styled.img`
-	width: 192px;
+	width: 100px;
+
 	position: absolute;
 	top: 0px;
 	left: -20px;

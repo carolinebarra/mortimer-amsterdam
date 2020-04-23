@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-grid-system';
+import { Col, Row } from 'react-grid-system';
 import background from '../../images/mortimer-background.jpg';
 import name from '../../images/mortimer-name.jpg';
 import styled from 'styled-components';
@@ -10,16 +10,18 @@ import Gallery from './Gallery';
 
 const Background = styled.img`
 	width: 100%;
-	height: 791px;
+	height: 100vh;
 	z-index: 1;
 `;
 
 const Name = styled.img`
 	z-index: 2;
-	position: absolute;
+	width: 100%;
 	mix-blend-mode: darken;
-	left: 395.5px;
-	top: 160px;
+	position: absolute;
+	top: 25vh;
+	left: 12.5%;
+
 	transform: rotate(-39deg);
 `;
 const Container = styled.div`
@@ -32,11 +34,16 @@ export default class Body extends Component {
 	render() {
 		return (
 			<Col lg={12}>
-				<Container>
-					<Background src={background} />
-					<Name src={name} />
-				</Container>
-				<About />
+				<Row>
+					<Container>
+						<Background src={background} />
+						<Name src={name} />
+					</Container>
+				</Row>
+				<Row style={{ backgroundColor: '#8ca99f' }}>
+					<About />
+				</Row>
+				<Row></Row>
 				<Menu />
 
 				<Gallery />

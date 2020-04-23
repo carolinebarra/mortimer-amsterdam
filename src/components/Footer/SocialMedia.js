@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Facebook } from '@styled-icons/fa-brands/Facebook';
 import { Mail } from '@styled-icons/heroicons-solid/Mail';
 import { Instagram } from '@styled-icons/fa-brands/Instagram';
-import { Col } from 'react-grid-system';
 
 const Container = styled.div`
 	display: flex;

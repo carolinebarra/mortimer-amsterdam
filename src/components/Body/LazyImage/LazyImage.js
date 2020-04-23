@@ -9,7 +9,7 @@ const LazyImage = ({ src, aspectRatio, lazyLoad }) => {
 
 	return (
 		<div className="lazyImage">
-			<img className="lazyImage__img" src={src} />
+			<img className="lazyImage__img" alt={src} src={src} />
 		</div>
 	);
 };

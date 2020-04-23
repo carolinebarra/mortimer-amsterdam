@@ -22,7 +22,7 @@ const images = [
 	'img/eggs.jpeg',
 	'img/eggs2.jpeg',
 	'img/hollandaise.jpeg',
-	,
+
 	'img/japanese.jpeg',
 	'img/mushrooms.jpeg',
 	'img/pancakes.jpeg',
