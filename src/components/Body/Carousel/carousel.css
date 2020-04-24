@@ -34,10 +34,8 @@
 	flex: 0 0 80%; /* Slide width will be 80% */
 	background-color: #131313;
 	height: 720px;
-	@media screen(max-width: 758px) {
-		height: 720px;
-	}
 }
+
 .carousel__dots {
 	display: flex;
 	flex-wrap: wrap;
@@ -99,4 +97,21 @@
 .carousel__arrowBtn__svg {
 	width: 3.5rem;
 	height: 3.5rem;
+}
+
+@media all and (max-width: 768px) {
+	.carousel__item {
+		height: 300px;
+	}
+	.carousel__dots {
+		display: none;
+	}
+}
+@media (orientation: landscape) {
+	.carousel__item {
+		height: 300px;
+	}
+	.carousel__dots {
+		display: none;
+	}
 }

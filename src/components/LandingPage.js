@@ -15,7 +15,7 @@ export default class LandingPage extends React.Component {
 			<div>
 				<Navbar navbarState={this.state.navbarOpen} handleNavbar={this.handleNavbar} />
 				<Body />
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		);
 	}

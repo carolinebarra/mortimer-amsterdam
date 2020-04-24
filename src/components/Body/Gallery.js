@@ -33,15 +33,17 @@ const images = [
 
 export default function Gallery() {
 	return (
-		<Box id="gallery">
-			<Header title={'Gallery'} />
-			<LazyImageProvider>
-				<Carousel>
-					{images.map((image, i) => (
-						<LazyImage aspectRatio={[16, 9]} src={image} key={i} />
-					))}
-				</Carousel>
-			</LazyImageProvider>
-		</Box>
+		<Col lg={12}>
+			<Box id="gallery">
+				<Header title={'Gallery'} />
+				<LazyImageProvider>
+					<Carousel>
+						{images.map((image, i) => (
+							<LazyImage aspectRatio={[16, 9]} src={image} key={i} />
+						))}
+					</Carousel>
+				</LazyImageProvider>
+			</Box>
+		</Col>
 	);
 }

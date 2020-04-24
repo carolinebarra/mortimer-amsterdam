@@ -24,6 +24,13 @@ const Box = styled.div`
 	.title {
 		color: rgb(18, 60, 56);
 	}
+	hr {
+		display: block;
+		width: 100%;
+		border: 2px solid #ff4500;
+
+		position: absolute;
+	}
 `;
 const PDFDocumentWrapper = styled.div`
 	canvas {
@@ -83,6 +90,7 @@ export default function Menu() {
 
 				{showDrinks ? <Pdf /> : ''}
 				{showFood ? <Pdf2 /> : ''}
+				<hr />
 			</Box>
 		</Col>
 	);
