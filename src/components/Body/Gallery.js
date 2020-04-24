@@ -5,10 +5,11 @@ import Carousel from './Carousel/Carousel';
 import { LazyImageProvider } from './LazyImage/LazyImageContext';
 import LazyImage from './LazyImage/LazyImage';
 import background from '../../images/background-gallery.jpg';
+import Header from './Header';
 
 const Box = styled.div`
 	text-align: center;
-	height: 80vh;
+	height: 90vh;
 	background-image: url(${background});
 	.title {
 		color: rgb(252, 253, 217);
@@ -32,17 +33,15 @@ const images = [
 
 export default function Gallery() {
 	return (
-		<Col lg={12}>
-			<Box id="gallery">
-				<h1 className="title">Gallery</h1>
-				<LazyImageProvider>
-					<Carousel>
-						{images.map((image, i) => (
-							<LazyImage aspectRatio={[10, 7]} src={image} key={i} />
-						))}
-					</Carousel>
-				</LazyImageProvider>
-			</Box>
-		</Col>
+		<Box id="gallery">
+			<Header title={'Gallery'} />
+			<LazyImageProvider>
+				<Carousel>
+					{images.map((image, i) => (
+						<LazyImage aspectRatio={[16, 9]} src={image} key={i} />
+					))}
+				</Carousel>
+			</LazyImageProvider>
+		</Box>
 	);
 }

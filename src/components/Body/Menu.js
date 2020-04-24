@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col } from 'react-grid-system';
+import Header from './Header';
 import styled from 'styled-components';
 import Drinks from '../../images/mortimer-drinks.pdf';
 import { Document, Page, pdfjs } from 'react-pdf';
@@ -74,7 +75,7 @@ export default function Menu() {
 	return (
 		<Col lg={12}>
 			<Box id="menu">
-				<h1 className="title">MENU</h1>
+				<Header title={'Menu'} />
 
 				<MyButton onClick={onClick2}> Food</MyButton>
 

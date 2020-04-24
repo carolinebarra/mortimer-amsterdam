@@ -12,6 +12,7 @@ const Box = styled.div`
 	height: 100%;
 	overflow: hidden;
 	text-transform: uppercase;
+
 	color: rgb(18, 60, 56);
 	.title {
 		font-size: 3em;
@@ -21,13 +22,7 @@ const Box = styled.div`
 	.follow {
 		font-size: 3em;
 	}
-	.instagram {
-		width: 34px;
-		height: 34px;
-		position: absolute;
-		top: 97px;
-		color: rgb(18, 60, 56);
-	}
+
 	.leftBox {
 		text-align: center;
 		font-size: 28px;
@@ -43,11 +38,15 @@ const Box = styled.div`
 
 	.topPara {
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 34px;
 		position: relative;
 		height: 100%;
-
+		padding: 15px;
 		color: rgb(18, 60, 56);
+		p {
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
 
 		@media screen and (min-width 600px) {
 			padding-left: 29px;
@@ -57,6 +56,18 @@ const Box = styled.div`
 		color: #f4f3d8;
 		text-align-last: left;
 	}
+`;
+
+const Gram = styled(Instagram)`
+	width: 35px;
+	height: 35px;
+	color: rgb(18, 60, 56);
+	display: inline-block;
+`;
+const LineR = styled.hr`
+	width: 50%;
+	text-align-last: right;
+	border: 1px solid rgb(18, 60, 56);
 `;
 export default class Menu extends Component {
 	render() {
@@ -71,7 +82,7 @@ export default class Menu extends Component {
 							onload="this.loadtrk=true"
 						></script>
 					</Helmet>
-					<Row style={{ paddingTop: '20px' }}>
+					<Row style={{ padding: '15px' }}>
 						<Col lg={2}>
 							<img className="logo" src={logo} alt="logo" />
 						</Col>
@@ -86,17 +97,17 @@ export default class Menu extends Component {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<Instagram />
+								<Gram />
 							</a>
 						</Col>
 					</Row>
 					<Row>
 						<Col lg={2} style={{ paddingLeft: '40px' }}>
-							<Row>
+							<Row style={{ marginLeft: '0px', marginRight: '0px' }}>
 								<p className="leftBox">
 									Right in the heart of Amsterdam, at the Nieuwezijds Kolk, you will find Mortimer.
 									The new neighbourhood hangout for all-day brunch, local products and the perfect cup
-									of coffee.{' '}
+									of coffee.
 								</p>
 							</Row>
 							<Row style={{ justifyContent: 'center' }}>
@@ -120,26 +131,27 @@ export default class Menu extends Component {
 						</Col>
 						<Col lg={7} className="topPara">
 							<p>
-								<hr width="50%" size="3" align="left" color="#123c38" />
+								<LineR />
 								As a chef, I am used to just doing everything based on my experience. I know how to
 								prepare a dish and pop on a busy night. Starting your own business is a different story
 								...
-								<hr width="50%" size="3" align="right" color="#123c38" />
+								<LineR />
 							</p>
 							<p id="owner">- Robert Bergman, Mortimer's Executive Chef.</p>
 							<p>
 								What is your favorite dish? Mortimer's Eggs 'mushrooms on toast'. This dish really
 								creates a taste explosion! The combination of crispy mushrooms and a soft egg has a high
 								Umami content, or 'taste of deliciousness'.
-								<hr width="50%" size="3" align="left" color="#123c38" />
+								<LineR />
 							</p>
+
 							<p>
 								Mortimer is located in the bustle of the center of Amsterdam, but still has a cozy
 								living room atmosphere. Between all international fast food & to go chains we provide a
 								personal atmosphere, where people can enjoy a nice brunch & good cup of coffee at their
 								leisure. The team is also unique: everyone has their own story and contributes with
 								something positive to the Mortimer atmosphere in their own way.
-								<hr width="50%" size="3" align="right" color="#123c38" />
+								<LineR />
 							</p>
 						</Col>
 						<Col lg={2}>

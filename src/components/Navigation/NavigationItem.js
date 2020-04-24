@@ -6,9 +6,11 @@ const Container = styled.div`
 	font-weight: 600;
 	font-size: 2em;
 	text-transform: uppercase;
+
 	box-shadow: rgb(74, 77, 76);
 	text-decoration: none;
 	color: rgb(252, 253, 217);
+
 	:hover {
 		border-bottom: 1px solid rgb(255, 69, 0);
 		box-shadow: gray;

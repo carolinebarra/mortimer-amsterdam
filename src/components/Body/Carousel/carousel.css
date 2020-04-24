@@ -33,7 +33,10 @@
 	position: relative; /* Only needed if the carousel option is set to { loop: true } */
 	flex: 0 0 80%; /* Slide width will be 80% */
 	background-color: #131313;
-	height: 500px;
+	height: 720px;
+	@media screen(max-width: 758px) {
+		height: 720px;
+	}
 }
 .carousel__dots {
 	display: flex;
