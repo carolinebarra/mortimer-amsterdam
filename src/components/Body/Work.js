@@ -5,6 +5,9 @@ import Header from './Header';
 import { Col, Row } from 'react-grid-system';
 import staff from '../../images/staff.jpeg';
 import staff2 from '../../images/staff2.jpeg';
+const Box = styled.div`
+	color: #133b38;
+`;
 
 const Container = styled.div`
 	text-align: center;
@@ -18,22 +21,27 @@ const Container = styled.div`
 	}
 	p {
 		padding-top: 58px;
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
-	button {
-		background-color: #133b38;
-		color: #f4f3d8;
-		font-size: 0.8em;
-		padding: 15px;
-		margin-top: 15px;
-		border-radius: 29px;
-		cursor: pointer;
+	h2 {
+		padding-top: 58px;
 	}
 `;
+const MyButton = styled.button({
+	background: ' rgb(255, 69, 0)',
+	border: 0,
+	borderRadius: 30,
+	boxShadow: '0 3px 5px 2px  rgba(255, 158, 90) ',
+	color: 'white',
+	height: 48,
+	padding: '0 30px',
+	margin: 8,
+	fontSize: '19px'
+});
 
 const Work = () => {
 	return (
-		<div id="work">
+		<Box id="work">
 			<Header title={'Work with us'} />
 			<Container>
 				<Row style={{ padding: '40px' }}>
@@ -50,15 +58,15 @@ const Work = () => {
 							We are a group of enthusiastic, hospitable people who provide a professional yet fun service
 							without sacrificing quality or results.
 						</p>
-						<button onClick={() => (window.location.href = `mailto:sayhello@mortimeramsterdam.com`)}>
+						<MyButton onClick={() => (window.location.href = `mailto:sayhello@mortimeramsterdam.com`)}>
 							Apply Now
-						</button>
-						<p>From Mortimer with love</p>
+						</MyButton>
+						<h2>From Mortimer with love</h2>
 						<p>Anna, Ricardo, Aidan, Allard, Moes, Martijn, Robert</p>
 					</Col>
 				</Row>
 			</Container>
-		</div>
+		</Box>
 	);
 };
 

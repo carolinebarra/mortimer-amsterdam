@@ -4,13 +4,13 @@ import Header from './Header';
 import styled from 'styled-components';
 import Drinks from '../../images/mortimer-drinks.pdf';
 import { Document, Page, pdfjs } from 'react-pdf';
-import Food from '../../images/mortimer-food.pdf';
+import Food from '../../images/mortimer-menu.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const MyButton = styled.button({
 	background: ' rgb(255, 69, 0)',
 	border: 0,
 	borderRadius: 30,
-	boxShadow: '0 3px 5px 2px  rgba(255, 158, 90) ',
+
 	color: 'white',
 	height: 48,
 	padding: '0 30px',
@@ -20,15 +20,15 @@ const MyButton = styled.button({
 const Box = styled.div`
 	text-align: center;
 	height: 100%;
+	background-color: #0d2925;
+	color: #8ca99f;
 
-	.title {
-		color: rgb(18, 60, 56);
-	}
 	hr {
 		display: block;
 		width: 100%;
-		border: 2px solid #ff4500;
-
+		background-image: linear-gradient(to right, #ff4500, #333, #8ca99f);
+		border: 0;
+		height: 2px;
 		position: absolute;
 	}
 `;

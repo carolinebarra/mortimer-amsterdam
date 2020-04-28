@@ -1,13 +1,11 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import styled from 'styled-components';
-import Brand from '../Navigation/Brand';
 import logo from '../../images/mortimer-svg.svg';
 const Container = styled.div`
 	display: grid;
-	grid-template-columns: 150px 120px;
-
-	color: #143b38;
-
+	grid-template-columns: 150px 218px;
+	text-align: center;
 	img {
 		width: 100px;
 		justify-self: self-end;
@@ -15,14 +13,15 @@ const Container = styled.div`
 		padding-top: 15px;
 	}
 	h1 {
-		padding-top: 53px;
-		font-size: 1.3em;
+		padding-top: 43px;
+		font-size: 2.3em;
 	}
 	hr {
 		display: block;
 		width: 100%;
-		border: 2px solid #ff4500;
-
+		background-image: linear-gradient(to right, #ff4500, #333, #8ca99f);
+		border: 0;
+		height: 2px;
 		position: absolute;
 	}
 `;

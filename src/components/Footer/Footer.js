@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-grid-system';
 import styled from 'styled-components';
 import facade from '../../images/facade.jpeg';
-import SocialMedia from './SocialMedia';
+
 const Box = styled.div`
 	background-color: rgb(18, 60, 56);
 	width: 100%;
@@ -68,9 +68,7 @@ export default class Footer extends Component {
 						<Row justify="center">
 							<Title> Follow us</Title>
 						</Row>
-						<Row justify="center">
-							<SocialMedia />
-						</Row>
+						<Row justify="center"></Row>
 					</Col>
 				</Row>
 			</Box>

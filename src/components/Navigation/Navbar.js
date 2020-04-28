@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Brand from './Brand';
 import BurgerMenu from './BurgerMenu';
@@ -11,9 +11,9 @@ const NavBar = styled(animated.nav)`
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: rgb(18, 60, 56);
+
 	z-index: 1;
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 `;
 
 const FlexContainer = styled.div`
@@ -29,7 +29,7 @@ const NavLinks = styled(animated.ul)`
 	list-style-type: none;
 	margin: auto 0;
 	& span {
-		color: rgb(252, 253, 217);
+		color: #8ca99f;
 		text-transform: uppercase;
 		font-weight: 600;
 		border-bottom: 1px solid transparent;
@@ -71,12 +71,15 @@ const Navbar = (props) => {
 				<FlexContainer>
 					<Brand />
 					<NavLinks style={linkAnimation}>
+						<Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
+							<span>About</span>
+						</Link>
 						<Link activeClass="active" to="menu" spy={true} smooth={true} offset={0} duration={500}>
 							<span>Menu</span>
 						</Link>
 
-						<Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
-							<span>About</span>
+						<Link activeClass="active" to="work" spy={true} smooth={true} offset={0} duration={500}>
+							<span>Work with us</span>
 						</Link>
 
 						<Link activeClass="active" to="gallery" spy={true} smooth={true} offset={0} duration={500}>
@@ -85,10 +88,6 @@ const Navbar = (props) => {
 
 						<Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
 							<span>Contact</span>
-						</Link>
-
-						<Link activeClass="active" to="work" spy={true} smooth={true} offset={0} duration={500}>
-							<span>Work with us</span>
 						</Link>
 					</NavLinks>
 					<MobileWrapper>

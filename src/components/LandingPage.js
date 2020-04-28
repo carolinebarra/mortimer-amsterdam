@@ -1,7 +1,14 @@
 import React from 'react';
 import Navbar from './Navigation/Navbar';
-import Footer from './Footer/Footer';
+import Contact from './Contact/Contact';
+import styled from 'styled-components';
 import Body from './Body/Body';
+
+const Container = styled.div`
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+`;
 
 export default class LandingPage extends React.Component {
 	state = {
@@ -12,11 +19,11 @@ export default class LandingPage extends React.Component {
 	};
 	render() {
 		return (
-			<div>
+			<Container>
 				<Navbar navbarState={this.state.navbarOpen} handleNavbar={this.handleNavbar} />
 				<Body />
-				{/* <Footer /> */}
-			</div>
+				<Contact />
+			</Container>
 		);
 	}
 }

@@ -9,10 +9,16 @@ import Header from './Header';
 
 const Box = styled.div`
 	text-align: center;
-	height: 90vh;
+	height: 100vh;
 	background-image: url(${background});
-	.title {
-		color: rgb(252, 253, 217);
+
+	color: rgb(252, 253, 217);
+
+	@media (max-width: 414px) {
+		height: 70vh;
+	}
+	@media (max-width: 1024px) {
+		height: 70vh;
 	}
 `;
 

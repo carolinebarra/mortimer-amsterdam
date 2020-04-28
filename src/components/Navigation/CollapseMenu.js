@@ -48,18 +48,18 @@ const CollapseMenu = (props) => {
 			>
 				<NavLinks>
 					<li>
-						<Link activeClass="active" to="menu" spy={true} smooth={true} offset={0} duration={500}>
-							<span>Menu</span>
-						</Link>
-					</li>
-					<li>
 						<Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
 							<span>About</span>
 						</Link>
 					</li>
 					<li>
-						<Link activeClass="active" to="gallery" spy={true} smooth={true} offset={0} duration={500}>
-							<span>Gallery</span>
+						<Link activeClass="active" to="menu" spy={true} smooth={true} offset={0} duration={500}>
+							<span>Menu</span>
+						</Link>
+					</li>
+					<li>
+						<Link activeClass="active" to="work" spy={true} smooth={true} offset={0} duration={500}>
+							<span>Work with us</span>
 						</Link>
 					</li>
 					<li>
@@ -70,6 +70,11 @@ const CollapseMenu = (props) => {
 					<li>
 						<Link activeClass="active" to="work" spy={true} smooth={true} offset={0} duration={500}>
 							<span>Work with us</span>
+						</Link>
+					</li>
+					<li>
+						<Link activeClass="active" to="gallery" spy={true} smooth={true} offset={0} duration={500}>
+							<span>Gallery</span>
 						</Link>
 					</li>
 				</NavLinks>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import logo from '../../images/mortimer-svg.svg';
 
 const Image = styled.img`
-	height: 85%;
+	height: 100%;
 	margin: auto 0;
 `;
 
