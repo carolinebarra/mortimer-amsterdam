@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/mortimer-amsterdam/static/css/main.dc4864e2.chunk.css",
+    "main.js": "/mortimer-amsterdam/static/js/main.66bc147e.chunk.js",
+    "main.js.map": "/mortimer-amsterdam/static/js/main.66bc147e.chunk.js.map",
+    "runtime-main.js": "/mortimer-amsterdam/static/js/runtime-main.cedb89b7.js",
+    "runtime-main.js.map": "/mortimer-amsterdam/static/js/runtime-main.cedb89b7.js.map",
+    "static/js/2.60e5f05f.chunk.js": "/mortimer-amsterdam/static/js/2.60e5f05f.chunk.js",
+    "static/js/2.60e5f05f.chunk.js.map": "/mortimer-amsterdam/static/js/2.60e5f05f.chunk.js.map",
+    "index.html": "/mortimer-amsterdam/index.html",
+    "precache-manifest.6e8decce4849eb20176acb7c2e8360bf.js": "/mortimer-amsterdam/precache-manifest.6e8decce4849eb20176acb7c2e8360bf.js",
+    "service-worker.js": "/mortimer-amsterdam/service-worker.js",
+    "static/css/main.dc4864e2.chunk.css.map": "/mortimer-amsterdam/static/css/main.dc4864e2.chunk.css.map",
+    "static/js/2.60e5f05f.chunk.js.LICENSE.txt": "/mortimer-amsterdam/static/js/2.60e5f05f.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/mortimer-amsterdam/static/media/BebasNeue-Regular.21bb70b6.ttf",
+    "static/media/background-gallery.jpg": "/mortimer-amsterdam/static/media/background-gallery.2087817d.jpg",
+    "static/media/facade2.jpeg": "/mortimer-amsterdam/static/media/facade2.62782278.jpeg",
+    "static/media/googlemaps.png": "/mortimer-amsterdam/static/media/googlemaps.7ca79fae.png",
+    "static/media/menu.jpeg": "/mortimer-amsterdam/static/media/menu.ef9822dc.jpeg",
+    "static/media/mortimer-background.jpg": "/mortimer-amsterdam/static/media/mortimer-background.c05728d0.jpg",
+    "static/media/mortimer-svg.svg": "/mortimer-amsterdam/static/media/mortimer-svg.02328d22.svg",
+    "static/media/rob-about.jpeg": "/mortimer-amsterdam/static/media/rob-about.6d98f733.jpeg",
+    "static/media/staff.jpeg": "/mortimer-amsterdam/static/media/staff.7702a329.jpeg",
+    "static/media/staff2.jpeg": "/mortimer-amsterdam/static/media/staff2.32c79de6.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cedb89b7.js",
+    "static/js/2.60e5f05f.chunk.js",
+    "static/css/main.dc4864e2.chunk.css",
+    "static/js/main.66bc147e.chunk.js"
+  ]
+}
