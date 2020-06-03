@@ -62,7 +62,7 @@ const Work = () => {
 							Apply Now
 						</MyButton>
 						<h2>From Mortimer with love</h2>
-						<p>Anna, Ricardo, Aidan, Allard, Moes, Martijn, Robert</p>
+						<p>Anna, Ricardo, Moes, Martijn, Robbert</p>
 					</Col>
 				</Row>
 			</Container>

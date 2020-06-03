@@ -9,16 +9,16 @@ const Container = styled.div`
 	display: flex;
 	padding: 0;
 	align-content: flex-start;
+	padding-top: 27px;
 `;
 
 const Link = styled.a`
 	margin: 10px;
 	color: rgb(255, 69, 0);
-	width: 40px;
-	height: 40px;
+
 	svg {
-		width: 40px;
-		height: 40px;
+		width: 49px;
+		height: 60px;
 	}
 `;
 export default class SocialMedia extends React.Component {

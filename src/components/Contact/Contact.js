@@ -34,8 +34,8 @@ const Container = styled.div`
 		color: #8ca99f;
 		svg {
 			color: #ff4500;
-			height: 30px;
-			width: 30px;
+			height: 49px;
+			width: 50px;
 			position: relative;
 		}
 		p {
@@ -68,7 +68,7 @@ function Contact() {
 				<Col lg={3} align="center">
 					<ContactForm />
 				</Col>
-				<Col lg={6} align="center">
+				<Col lg={6} align="center" style={{ paddingLeft: '47px' }}>
 					<h1>How to find us</h1>
 					<Map src={maps} alt="maps" />
 					<a
@@ -81,26 +81,31 @@ function Contact() {
 							<KeyboardArrowRight />
 						</p>
 					</a>
-					<div className="address">
-						<p>
-							Nieuwezijds Kolk 33 <br />
-							1012 PV Amsterdam
+					<div>
+						<p id="reservations">
+							// Please give us a call to reserve a table{''}
+							<a style={{ fontSize: '20px' }} href="tel:31-020-233 2899">
+								<hr />
+								+31 (0) 20 233 2899
+							</a>
 						</p>
-						<a href="tel:31-020-233 2899">+31 (0) 20 233 2899</a>
 					</div>
-
-					<p id="reservations">// Please be advised that we don't take reservations</p>
 				</Col>
-				<Col lg={2} align="center">
+				<Col lg={2} align="center" style={{ paddingLeft: '30px', paddingRight: '0px' }}>
 					<h1>
 						<Clock />
 						OPENING HOURS
 					</h1>
-					<Row style={{ justifyContent: 'flex-end' }}>
+					<div>
 						<p>Monday - Friday: 7:30-16:00</p>
 						<p style={{ paddingRight: '44px' }}>Weekends: 8:30-16:00</p>
-					</Row>
-					<Row style={{ marginTop: '103px' }}>
+
+						<p style={{ lineHeight: '24px', paddingRight: '54px' }}>
+							Nieuwezijds Kolk 33 <br />
+							1012 PV Amsterdam
+						</p>
+					</div>
+					<Row style={{ marginTop: '103px', marginLeft: '21px ' }}>
 						<SocialMedia />
 					</Row>
 				</Col>
