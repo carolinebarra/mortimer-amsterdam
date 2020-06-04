@@ -24,12 +24,10 @@ const Box = styled.div`
 
 const images = [
 	'/img/cofee3.jpeg',
-
 	'img/coffee2.jpeg',
 	'img/eggs.jpeg',
 	'img/eggs2.jpeg',
 	'img/hollandaise.jpeg',
-
 	'img/japanese.jpeg',
 	'img/mushrooms.jpeg',
 	'img/pancakes.jpeg',
