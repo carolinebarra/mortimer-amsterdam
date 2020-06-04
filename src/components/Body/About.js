@@ -8,7 +8,6 @@ import facade from '../../images/facade2.jpeg';
 import { Tripadvisor } from '@styled-icons/fa-brands/Tripadvisor';
 
 const Container = styled.div`
-	width: 100%;
 	text-align: center;
 	justify-items: center;
 	align-items: start;
@@ -55,11 +54,11 @@ function About() {
 				entrepreneurs, where passion and love is reflected in the all-day brunch. We look forward to welcoming
 				you!
 			</h3>
-			<Row style={{ padding: '40px' }}>
-				<Col lg={4}>
+			<Row style={{ paddingLeft: '35px' }}>
+				<Col lg={4} style={{ paddingLeft: '0px' }}>
 					<Img src={facade} alt="facade" />
 				</Col>
-				<Col lg={4}>
+				<Col lg={4} style={{ paddingLeft: '0px' }}>
 					<Img src={rob} alt="Rob" />
 				</Col>
 

@@ -9,7 +9,7 @@ import Header from './Header';
 
 const Box = styled.div`
 	text-align: center;
-	height: 100vh;
+	height: 100%;
 	background-image: url(${background});
 
 	color: rgb(252, 253, 217);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col } from 'react-grid-system';
 import Header from './Header';
 import styled from 'styled-components';
 import Food from '../../images/menu.jpeg';
@@ -31,13 +30,11 @@ const Box = styled.div`
 
 export default function Menu() {
 	return (
-		<Col lg={12}>
-			<Box id="menu">
-				<Header title={'Menu'} />
-				<Background src={Food} alt="menu" />
+		<Box id="menu">
+			<Header title={'Menu'} />
+			<Background src={Food} alt="menu" />
 
-				<hr />
-			</Box>
-		</Col>
+			<hr />
+		</Box>
 	);
 }

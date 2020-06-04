@@ -36,7 +36,8 @@ const MyButton = styled.button({
 	height: 48,
 	padding: '0 30px',
 	margin: 8,
-	fontSize: '19px'
+	fontSize: '19px',
+	width: '50%'
 });
 
 const Work = () => {
@@ -52,7 +53,7 @@ const Work = () => {
 						<img src={staff2} alt="staff2" />
 					</Col>
 
-					<Col lg={4} style={{ textAlign: '-webkit-center' }}>
+					<Col lg={4} style={{ textAlign: '-webkit-center', paddingLeft: '20px' }}>
 						<h2>Join our Team</h2>
 						<p>
 							We are a group of enthusiastic, hospitable people who provide a professional yet fun service

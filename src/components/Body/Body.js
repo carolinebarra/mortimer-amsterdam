@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row } from 'react-grid-system';
+
 import background from '../../images/mortimer-background.jpg';
 import name from '../../images/mortimer-svg.svg';
 import styled from 'styled-components';
@@ -10,9 +10,7 @@ import Work from './Work';
 
 const Container = styled.div`
 	height: 100%;
-	max-height: 100%;
 
-	max-width: 100%;
 	overflow: hidden;
 `;
 const Background = styled.div`
@@ -26,18 +24,18 @@ const Background = styled.div`
 	width: 100%;
 	background-blend-mode: multiply;
 	mix-blend-mode: overlay, none;
+	@media (max-width: 414px) {
+		background-position: 91% 36%, center;
+	}
 `;
 export default class Body extends Component {
 	render() {
 		return (
 			<Container>
-				<Row>
-					<Background />
-				</Row>
-				<Row style={{ backgroundColor: '#8ca99f' }}>
-					<About />
-				</Row>
-				<Row></Row>
+				<Background />
+
+				<About />
+
 				<Menu />
 				<Work />
 				<Gallery />

@@ -9,11 +9,10 @@ const Container = styled.div`
 	display: flex;
 	padding: 0;
 	align-content: flex-start;
-	padding-top: 27px;
+	padding-top: 123px;
 `;
 
 const Link = styled.a`
-	margin: 10px;
 	color: rgb(255, 69, 0);
 
 	svg {

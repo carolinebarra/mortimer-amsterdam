@@ -100,14 +100,13 @@ function Contact() {
 						<p>Monday - Friday: 7:30-16:00</p>
 						<p style={{ paddingRight: '44px' }}>Weekends: 8:30-16:00</p>
 
-						<p style={{ lineHeight: '24px', paddingRight: '54px' }}>
-							Nieuwezijds Kolk 33 <br />
-							1012 PV Amsterdam
+						<p style={{ lineHeight: '28px', paddingRight: '54px' }}>
+							Nieuwezijds Kolk 33
+							<br /> 1012 PV Amsterdam
 						</p>
 					</div>
-					<Row style={{ marginTop: '103px', marginLeft: '21px ' }}>
-						<SocialMedia />
-					</Row>
+
+					<SocialMedia />
 				</Col>
 			</Row>
 		</Container>

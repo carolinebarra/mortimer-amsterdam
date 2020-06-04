@@ -26,24 +26,33 @@ p{
 }
 
 html {
-   height: 100%;
-   width:100%;
-    margin: 0;
-    max-width: 100%;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+   -webkit-scrollbar:none;
+
 }
-  
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
 
 *{
 	margin: 0px;
     padding: 0px;
 	box-sizing: border-box;
- 
-
-
+  width:100%;
+    overflow-x:hidden;
 }
 
 

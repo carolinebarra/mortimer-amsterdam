@@ -4,7 +4,10 @@ import logo from '../../images/mortimer-svg.svg';
 
 const Image = styled.img`
 	height: 100%;
-	margin: auto 0;
+	margin-left: -26rem;
+	@media (max-width: 768px) {
+		margin: auto 0;
+	}
 `;
 
 const Brand = () => {

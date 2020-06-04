@@ -34,7 +34,6 @@ const MyButton = styled.button({
 	color: 'white',
 	height: 48,
 	padding: '0 30px',
-	margin: 8,
 	fontSize: 24
 });
 

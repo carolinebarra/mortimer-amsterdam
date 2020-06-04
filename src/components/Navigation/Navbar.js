@@ -28,6 +28,7 @@ const NavLinks = styled(animated.ul)`
 	justify-self: end;
 	list-style-type: none;
 	margin: auto 0;
+	text-align-last: right;
 	& span {
 		color: #8ca99f;
 		text-transform: uppercase;
