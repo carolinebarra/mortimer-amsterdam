@@ -91,16 +91,16 @@ function Contact() {
 						</p>
 					</div>
 				</Col>
-				<Col lg={2} align="center" style={{ paddingLeft: '30px', paddingRight: '0px' }}>
+				<Col lg={2} align="center" style={{ paddingLeft: '30px', paddingRight: '0px', maxWidth: ' 24.6667%' }}>
 					<h1>
 						<Clock />
 						OPENING HOURS
 					</h1>
 					<div>
 						<p>Monday - Friday: 7:30-16:00</p>
-						<p style={{ paddingRight: '44px' }}>Weekends: 8:30-16:00</p>
+						<p>Weekends: 8:30-16:00</p>
 
-						<p style={{ lineHeight: '28px', paddingRight: '54px' }}>
+						<p style={{ lineHeight: '28px' }}>
 							Nieuwezijds Kolk 33
 							<br /> 1012 PV Amsterdam
 						</p>
