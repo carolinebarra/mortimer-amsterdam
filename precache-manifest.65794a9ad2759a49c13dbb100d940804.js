@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "feee80df0bff257fb3fc72381fe56029",
+    "revision": "9b313d5a7a64f619f56996c5a186e0a6",
     "url": "/mortimer-amsterdam/index.html"
   },
   {
-    "revision": "1bc044af7836802a90fd",
+    "revision": "c4878f970bd16fb03a61",
     "url": "/mortimer-amsterdam/static/css/main.dc4864e2.chunk.css"
   },
   {
-    "revision": "a42b22ca34740e2bd80d",
-    "url": "/mortimer-amsterdam/static/js/2.60e5f05f.chunk.js"
+    "revision": "fde8c84aac59366f6ef9",
+    "url": "/mortimer-amsterdam/static/js/2.0311a7f9.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/mortimer-amsterdam/static/js/2.60e5f05f.chunk.js.LICENSE.txt"
+    "url": "/mortimer-amsterdam/static/js/2.0311a7f9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bc044af7836802a90fd",
-    "url": "/mortimer-amsterdam/static/js/main.66bc147e.chunk.js"
+    "revision": "c4878f970bd16fb03a61",
+    "url": "/mortimer-amsterdam/static/js/main.45167d8a.chunk.js"
   },
   {
     "revision": "db85a376e17d669d48ff",
