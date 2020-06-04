@@ -23,7 +23,6 @@ const Box = styled.div`
 `;
 
 const images = [
-	'/img/cofee3.jpeg',
 	'img/coffee2.jpeg',
 	'img/eggs.jpeg',
 	'img/eggs2.jpeg',
