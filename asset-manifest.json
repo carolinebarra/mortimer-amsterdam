@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mortimer-amsterdam/static/css/main.dc4864e2.chunk.css",
-    "main.js": "/mortimer-amsterdam/static/js/main.45167d8a.chunk.js",
-    "main.js.map": "/mortimer-amsterdam/static/js/main.45167d8a.chunk.js.map",
+    "main.js": "/mortimer-amsterdam/static/js/main.c1f3723d.chunk.js",
+    "main.js.map": "/mortimer-amsterdam/static/js/main.c1f3723d.chunk.js.map",
     "runtime-main.js": "/mortimer-amsterdam/static/js/runtime-main.cedb89b7.js",
     "runtime-main.js.map": "/mortimer-amsterdam/static/js/runtime-main.cedb89b7.js.map",
     "static/js/2.0311a7f9.chunk.js": "/mortimer-amsterdam/static/js/2.0311a7f9.chunk.js",
     "static/js/2.0311a7f9.chunk.js.map": "/mortimer-amsterdam/static/js/2.0311a7f9.chunk.js.map",
     "index.html": "/mortimer-amsterdam/index.html",
-    "precache-manifest.65794a9ad2759a49c13dbb100d940804.js": "/mortimer-amsterdam/precache-manifest.65794a9ad2759a49c13dbb100d940804.js",
+    "precache-manifest.89b9ef8baa9d1e1931764d136b2db159.js": "/mortimer-amsterdam/precache-manifest.89b9ef8baa9d1e1931764d136b2db159.js",
     "service-worker.js": "/mortimer-amsterdam/service-worker.js",
     "static/css/main.dc4864e2.chunk.css.map": "/mortimer-amsterdam/static/css/main.dc4864e2.chunk.css.map",
     "static/js/2.0311a7f9.chunk.js.LICENSE.txt": "/mortimer-amsterdam/static/js/2.0311a7f9.chunk.js.LICENSE.txt",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.cedb89b7.js",
     "static/js/2.0311a7f9.chunk.js",
     "static/css/main.dc4864e2.chunk.css",
-    "static/js/main.45167d8a.chunk.js"
+    "static/js/main.c1f3723d.chunk.js"
   ]
 }

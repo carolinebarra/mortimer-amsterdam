@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mortimer-amsterdam/precache-manifest.65794a9ad2759a49c13dbb100d940804.js"
+  "/mortimer-amsterdam/precache-manifest.89b9ef8baa9d1e1931764d136b2db159.js"
 );
 
 self.addEventListener('message', (event) => {
